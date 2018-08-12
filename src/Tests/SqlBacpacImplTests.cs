@@ -22,7 +22,6 @@ namespace Tests
         }
 
         [Test]
-        [Ignore("fails on build server for some reason. Mostly missing dlls in place. But that's another story")]
         public void Try_Restore_Bacpac()
         {
             try
