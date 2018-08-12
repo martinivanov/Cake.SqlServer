@@ -136,7 +136,7 @@ Task("Copy-Files")
 		CopyFileToDirectory(parameters.BuildDir + "/Cake.SqlServer.pdb", parameters.ResultBinDir);
 		CopyFileToDirectory(parameters.BuildDir + "/Cake.SqlServer.xml", parameters.ResultBinDir);
 
-		CopyFiles(parameters.BuildDir + "/Microsoft.*.dll", parameters.ResultBinDir);
+		CopyFiles("./lib/Dac/140/*", parameters.ResultBinDir);
 
 		CopyFiles(new FilePath[] { "LICENSE", "README.md", "ReleaseNotes.md" }, parameters.ResultBinDir);
 	});
